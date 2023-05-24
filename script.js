@@ -47,5 +47,21 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada;
 }
 
+function copiarAlPortapapeles() {
+    var textArea = document.getElementById('textMensaje');
+  
+    // Selecciona el texto dentro del textarea
+    textArea.select();
+    textArea.setSelectionRange(0, 99999); // Para dispositivos móviles
+  
+    // Copia el texto al portapapeles
+    document.execCommand('copy');
+  
+    // Deselecciona el texto
+    window.getSelection().removeAllRanges();
+  
+    // Muestra una confirmación o realiza cualquier acción adicional
+    //alert('El contenido ha sido copiado al portapapeles');
+  }
 
-//console.table(matrizCodigo);
+  

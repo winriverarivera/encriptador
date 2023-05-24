@@ -91,4 +91,11 @@ main{
 .informacion {
     color: #495057;
     font-size: 18px;
+    zondicons:exclamation-solid ;
+}
+
+.pie {
+    color: #282c30;
+    font-size: 18px;
+    text-align: center;
 }
